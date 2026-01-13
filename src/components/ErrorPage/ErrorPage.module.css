@@ -1,0 +1,31 @@
+.error-container {
+    min-height: 100vh;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.error-container > h2 {
+    font-size: clamp(3.5rem, 2.6rem + 4.5vw, 8rem);
+}
+
+.error-container > p {
+    color: hsl(35, 15%, 35%);
+}
+
+.error-container > a {
+    background-color: #FC6226;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border: 0;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+}
