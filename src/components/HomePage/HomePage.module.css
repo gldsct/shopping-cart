@@ -1,0 +1,302 @@
+main {
+    color: #37220d;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+
+/* Primary Headline Styles */
+
+.hero-section {
+    padding: 0.75rem 0.5rem;
+}
+
+.hero-section figcaption, .content-section figcaption {
+    text-align: center;
+}
+
+.hero-header {
+    font-size: clamp(3.5rem, 2.6rem + 4.5vw, 8rem);
+    line-height: 1.15;
+}
+
+.model-one-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Left Panel Styles */
+
+.left-panel {
+    padding: 0.75rem 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.left-panel-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.dash-separator {
+    width: 2rem;
+    height: 4px;
+    background-color: #FC6226;
+}
+
+.left-panel-text {
+    font-weight: 600;
+    font-size: clamp(1.5rem, 1.35rem + 0.75vw, 2.25rem);
+}
+
+.action-call-button {
+    background-color: #FC6226;
+    color: white;
+    font-weight: 600;
+    margin: 1.25rem 0rem 0.5rem;
+    border: 0;
+    padding: 0.25rem 2rem;
+
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-separator {
+    padding-right: 1.5rem;
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+.action-call-button > span:nth-child(2) {
+    font-size: 1.15rem;
+    padding-left: 1.5rem;
+    border-left: 2px solid white;
+}
+
+/* Middle Panel Styles */
+
+.model-two-wrapper {
+    margin: 1.25rem 0;
+}
+
+.model-two-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Right Panel Styles */
+
+.right-panel {
+    margin: 2rem 0 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.right-panel figcaption {
+    font-weight: 500;
+    font-size: clamp(1.15rem, 1.08rem + 0.35vw, 1.5rem);
+}
+
+.right-panel > p {
+    text-align: center;
+}
+
+.model-three-image {
+    height: auto;
+}
+
+/* Content Section Styles */
+
+.content-section {
+    background-color: #233616;
+    color: white;
+    padding: 1.5rem 0.5rem;
+}
+
+.content-section > h3 {
+    font-size: clamp(2rem, 1.4rem + 3vw, 5rem);
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+}
+
+.scrollbar {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    
+    display: flex;
+    gap: 0.5rem;
+}
+
+.scrollbar-item {
+    flex: 0 0 75%;
+}
+
+.scrollbar-item figcaption {
+    white-space: normal;
+}
+
+.scrollbar-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Discount Info Section Styles */
+
+.discount-info {
+    border-bottom: 1px solid #1F2A19;
+    padding: 1rem 0.5rem;
+    background-color: #131E0D;
+    color: #94B87E;
+}
+
+.discount-info > p {
+    text-align: center;
+    font-size: 2.5rem;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Media Queries */
+
+@media (min-width: 540px) {
+    .hero-section {
+        padding: 1.5rem;
+    }
+
+    .content-section {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 840px) {
+    .hero-main-headline {
+        margin-bottom: 1rem;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .hero-header {
+        text-align: center;
+    }
+
+    .model-one-image {
+        width: 225px;
+        height: 225px;
+        object-fit: cover;
+        margin-top: 1.15rem;
+    }
+
+    .hero-secondary-headline {
+        margin-bottom: 1rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: clamp(1.5rem, -8.22rem + 18.52vw, 14rem);
+    }
+
+    .hero-main-headline figcaption {
+        text-align: left;
+    }
+
+    .left-panel {
+        flex: 1 1 30%;
+        padding-bottom: 0;
+        margin: 0;
+        align-self: flex-end;
+    }
+
+    .action-call-button {
+        align-self: flex-start;
+        margin: 3.5rem 0 0;
+    }
+
+    .model-two-wrapper {
+        margin: 0;
+        min-height: 450px;
+        flex: 1 1 40%;
+    }
+
+    .model-two-image {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .right-panel {
+        flex: 1 1 30%;
+        margin: 0;
+    }
+
+    .right-panel > p, .right-panel figcaption {
+        text-align: left;
+    }
+
+    .model-three-image {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .scrollbar {
+        gap: 1rem;
+    }
+
+    .scrollbar-item {
+        flex: 0 0 35%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-section {
+        padding: 2.5rem 5rem;
+    }
+
+    .content-section {
+        padding: 2.5rem 5rem;
+    }
+
+    .discount-info {
+        padding: 2.5rem 0;
+    }
+
+    .model-one-image {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+    }
+
+    .model-three-image {
+        height: 275px;
+        width: 275px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1600px) {
+    .model-one-image {
+        height: 275px;
+        width: 275px;
+        object-fit: cover;
+    }
+
+    .model-two-wrapper {
+        min-height: 500px;
+    }
+
+    .model-three-image {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+    }
+}
