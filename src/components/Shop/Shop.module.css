@@ -1,0 +1,170 @@
+.shirt-category, .coat-category {
+    padding: 0.5rem;
+}
+
+.shirt-category {
+    background-color: #6A8757;
+    color: white;
+}
+
+.category-heading {
+    font-size: clamp(2rem, 1.4rem + 3vw, 5rem);
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.clothing-item {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+}
+
+.clothing-item:nth-last-child(1) {
+    margin-bottom: 0.5rem;
+}
+
+.clothing-image > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.clothing-info, .add-to-cart {
+    padding: 0.25rem 0.5rem;
+}
+
+.shirt-category .clothing-info, .shirt-category .add-to-cart {
+    background-color: #233616;
+}
+
+.clothing-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clothing-price {
+    text-decoration: underline;
+    color: #98D57C;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.add-to-cart * {
+    border: 0;
+}
+
+.quantity-input {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-input > label {
+    margin-right: 0.5rem;
+}
+
+.quantity-input > button, .quantity-input > input, .add-to-cart-button {
+    outline: 1px solid black;
+}
+
+.quantity-input > button {
+    height: 2rem;
+    background-color: #98D57C;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.quantity-input > input {
+    height: 2rem;
+    width: 60px;
+    text-align: center;
+}
+
+.add-to-cart-button {
+    padding: 0rem 0.75rem;
+    background-color: #FC6226;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.coat-category .clothing-info, .coat-category .add-to-cart {
+    background-color: #BDD5EF;
+}
+
+.coat-category .quantity-input > button {
+    background-color: #0F253E;
+    color: white;
+}
+
+.coat-category .clothing-price {
+    color: #0F253E;
+}
+
+.coat-category input {
+    background-color: white;
+    color: black;
+}
+
+/* Media Queries */
+
+@media (min-width: 540px) {
+    .shirt-category, .coat-category {
+        padding: 0.75rem 1.5rem 1.75rem 1.5rem;
+    }
+
+    .clothing-container {
+        display: grid;
+        grid-template-rows: repeat(1fr);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: clamp(1rem, 0.19rem + 2.31vw, 2.5rem);
+    }
+
+    .clothing-item {
+        width: 100%;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .clothing-item:nth-last-child(1) {
+        margin: 0;
+    }
+
+    .clothing-image {
+        flex-grow: 1;
+    }
+
+    .clothing-image > img {
+        height: 100%;
+    }
+}
+
+@media (min-width: 840px) {
+    .clothing-container {
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    .shirt-category, .coat-category {
+        padding: 1.5rem 5rem 2.5rem 5rem;
+    }
+
+    .clothing-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (min-width: 1600px) {
+    .clothing-container {
+        grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    }
+}
